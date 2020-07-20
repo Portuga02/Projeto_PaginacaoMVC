@@ -12,11 +12,11 @@ if(ENVIRONMENT == 'development') {
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';
 } else {
-	define("BASE_URL", "http://localhost/mvc2/");
-	$config['dbname'] = 'mvc2';
+	define("BASE_URL", "http://localhost/mvc/");
+	$config['dbname'] = 'mvc';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = '';
+	$config['dbpass'] = '12456';
 }
 
 $db = new PDO("mysql:dbname=".$config['dbname'].";charset=utf8;host=".$config['host'], $config['dbuser'], $config['dbpass']);
